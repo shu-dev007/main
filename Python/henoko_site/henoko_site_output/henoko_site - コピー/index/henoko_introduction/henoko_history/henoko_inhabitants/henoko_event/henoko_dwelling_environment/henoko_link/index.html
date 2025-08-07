@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>名護市役所</title>
+  <meta name="viewport" content="width=1000" />
+<link rel="stylesheet" href="/_themes/base/reset.css" />
+<link rel="stylesheet" href="/_themes/base/style.css" />
+<link rel="stylesheet" href="/_themes/base/layouts/layout.css" />
+<link rel="stylesheet" href="/_themes/base/layouts/col-3.css" />
+<link rel="stylesheet" href="/_themes/top/style.css" />
+<link rel="stylesheet" href="/_themes/top/piece/style.css" />
+<link rel="stylesheet" href="/_themes/top/jquery.bxslider.css" />
+<link rel="alternate stylesheet" href="/_themes/base/colors/white.css" title="white" />
+<link rel="alternate stylesheet" href="/_themes/base/colors/blue.css" title="blue" />
+<link rel="alternate stylesheet" href="/_themes/base/colors/black.css" title="black" />
+<link rel="stylesheet" href="/_themes/base/print/printlayout.css" media="print" />
+<script src="/_themes/js/jquery.min.js"></script>
+<script src="/_themes/js/jquery-migrate.min.js"></script>
+<script src="/_themes/js/rails.min.js" async defer></script>
+<script src="/_themes/js/jquery.bxslider.min.js"></script>
+<script src="/_themes/js/jquery.naviRollover.js"></script>
+<script src="/_themes/js/common.js"></script>
+<script type="text/javascript">
+<!--
+$(function() {
+	function cookiecheck(){
+		var cookieString = document.cookie;
+		var BooleanCheck = cookieString.indexOf("key");
+		if(BooleanCheck == -1){
+			var expire = new Date();
+			expire.setTime( expire.getTime() + 1000 * 3600 * 168 );
+			document.cookie = 'citynago=key; expires=' + expire.toUTCString();
+	window.location.href = 'https://www.city.nago.okinawa.jp/top.html';
+		} else {		
+		}
+	}
+	cookiecheck();
+});
+// -->
+</script>
+<!-- トラッキングコードを記入 -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123153649-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-123153649-1');
+</script>
+
+<script type="text/javascript" src="https://www.city.nago.okinawa.jp/_themes/js/jquery.matchHeight.js"></script>
+<script type="text/javascript">
+$(function() {
+    $('.ttl').matchHeight();
+});
+</script>
+    
+<link rel="stylesheet" media="screen" href="/_common/js/flatpickr/themes/light.min.css" />
+<link rel="stylesheet" media="screen" href="/_common/js/flatpickr/themes/ja.css" />
+<script src="/_common/js/flatpickr/flatpickr.min.js"></script>
+<script src="/_common/js/flatpickr/l10n/ja.js"></script>
+<script src="/_common/js/flatpickr/plugins/scrollPlugin.js"></script>
+<script src="/_common/js/bowser.min.js"></script>
+
+</head>
+<body id="page-index" class="rootdir">
+  <div id="container">
+
+<header id="pageHeader">
+<div id="pageHeaderContainer">
+<div id="pageHeaderBody">
+
+<script src="/_common/js/jquery.cookie.js"></script>
+<script src="/_themes/js/smart-switch.js"></script>
+<script>$(function() { new SmartSwitch('#smartSwitch', ''); });</script>
+<div id="smartSwitch"></div>
+<!-- skip reading -->
+<div id="accessibilityTool" class="piece">
+<div class="pieceContainer">
+<div class="pieceBody">
+<p id="nocssread"><a href="#main">本文へ移動</a></p>
+<script src="/_common/js/jquery.cookie.js"></script>
+<script src="/_common/js/navigation.js"></script>
+<script>
+$(function(){
+  Navigation.initialize({
+    theme : { '#themeBlack' : 'black', '#themeBlue': 'blue', '#themeWhite' : 'white' },
+    fontSize: { '#fontSmall' : '80%', '#fontMiddle': '87.5%', '#fontLarge' : '100%' },
+    notice : '#headerBody',
+    ruby : '#navigationRuby',
+    talk : '#navigationTalk',
+    player : '#navigationTalkPlayer'
+  });
+  $('a.rubyOn').text('ふりがなをはずす');
+  $('#navigationTalk').click(function(){
+    if($(this).hasClass("active")){
+      $(this).text('よみあげる');
+    } else {
+      $(this).text('よみあげ中');
+    }
+    $(this).toggleClass('active');
+    return false;
+  });
+});
+</script>
+<ul>
+  <li>文字の大きさ
+  <ul class="fontSize">
+    <li><a href="#fontSmall" id="fontSmall" title="文字のサイズを小さくする">小</a></li>
+    <li><a href="#fontMiddle" id="fontMiddle" title="標準の文字サイズに戻す">中</a></li>
+    <li><a href="#fontLarge" id="fontLarge" title="文字のサイズを大きくする">大</a></li>
+  </ul>
+  </li>
+  <li>背景色
+  <ul class="themeColor">
+    <li><a href="#themeBlack" id="themeBlack" title="背景色を黒にする" class="black">黒</a></li>
+    <li><a href="#themeBlue" id="themeBlue" title="背景色を青にする" class="blue">青</a></li>
+    <li><a href="#themeWhite" id="themeWhite" title="背景色を白にする" class="white">白</a></li>
+  </ul>
+  </li>
+  <li><a href="#navigationTalk" id="navigationTalk">音声読み上げ</a><span id="navigationTalkPlayer"></span></li>
+  <li><a href="#navigationRuby" id="navigationRuby">ふりがな</a></li>
+  <li><div id="google_translate_element"></div><script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'ja', includedLanguages: 'en,es,fr,ja,ko,pt,ru,zh-CN,zh-TW', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+}
+</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></li>
+</ul>
+</div>
+</div>
+</div>
+<!-- /skip reading -->
+
+<div class="clearfix headwrap">
+<div id="commonHeader" class="piece">
+<div class="pieceContainer">
+<div class="pieceBody">
+<h1><span class="logo"><img src="/_themes/base/images/logo.png" alt="" /></span><a href="/">名護市役所<span class="subtitle">NAGO CITY OFFICIAL WEB SITE</span></a></h1>
+</div>
+</div>
+</div>
+<div class="spMenuBtn">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<div id="globalNavi" class="piece">
+<div class="pieceContainer">
+<div class="pieceBody">
+<ul class="clearfix">
+<li><a href="/articles/"><span class="navIcon"><img src="/_themes/nav/ic_nav01.png" alt=""></span><span class="navText">お知らせ</span></a></li>
+<li><a href="/about/" class=""><span class="navIcon"><img src="/_themes/nav/ic_nav02.png" alt=""></span><span class="navText">名護市概要</span></a></li>
+<li><a href="/category/guide/bousai/"><span class="navIcon"><img src="/_themes/nav/ic_nav03.png" alt=""></span><span class="navText">救急･消防･防災</span></a></li>
+<li><a href="/category/machidukuri/"><span class="navIcon"><img src="/_themes/nav/ic_nav04.png" alt=""></span><span class="navText">まちづくり</span></a></li>
+<li class="current"><a href="/about/access/"><span class="navIcon"><img src="/_themes/nav/ic_nav05.png" alt=""></span><span class="navText">アクセス</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<!-- end #pageHeaderContainer --></div>
+<!-- end #pageHeader --></header>
+
+
+<nav id="pageNav">
+<div id="pageNavContainer">
+<div id="pageNavBody">
+
+<div class="mainVisual clearfix">
+<div id="keyvisual" class="piece">
+<div class="pieceContainer">
+<div class="pieceBody">  
+<ul class="bannerImages">
+  <li class="banner">
+    <a target="_self" data-token="gwK2zMXjPp8EY8CidJVL" data-sp-url="https://koukin.f-regi.com/fc/nago_city/" href="https://koukin.f-regi.com/fc/nago_city/">
+        <img alt="名護市市税等納付サイト" title="税務課バナーデザイン案" src="/keyvisual/zeimukanousaite.png" />
+</a>  </li>
+  <li class="banner">
+    <a target="_self" data-token="BALcNwJJ4ed2nK8SJDx6" data-sp-url="https://koukin.f-regi.com/fc/nago_city/" href="https://koukin.f-regi.com/fc/nago_city/">
+        <img alt="名護市市税等納付サイト" title="税務課バナーデザイン案" src="/keyvisual/zeimukanouhusite.png" />
+</a>  </li>
+  <li class="banner">
+    <a target="_blank" data-token="FwZzNwck6TMr5zsNrXWo" data-sp-url="" href="/category/machidukuri/furusatonouzei/">
+        <img alt="ふるさと納税についてはこちら" title="ふるさと納税についてはこちら" src="/keyvisual/keyvisual1.jpg" />
+</a>  </li>
+  <li class="banner">
+    <a target="_blank" data-token="9XvZJYiSGwwVuGF8xers" data-sp-url="" href="/category/guide/gomi/">
+        <img alt="ごみの分別にご協力お願い致します　詳しくはこちら" title="ごみの分別にご協力お願い致します　詳しくはこちら" src="/keyvisual/keyvisual2.jpg" />
+</a>  </li>
+</ul>
+
+
+<script>
+//<![CDATA[
+$(function() {
+  $('#keyvisual li.banner a').on('click', function() {
+    $.get('/_api/ad_banner/piece_clicks', { piece_id: 93, token: $(this).data('token') });
+  });
+});
+
+//]]>
+</script>
+<script>
+//<![CDATA[
+$(function() {
+  if (bowser && bowser.mobile) {
+    $('#keyvisual li.banner a').each(function() {
+      var a = $(this);
+      if (a.data('sp_url')) {
+        a.attr('href', a.data('sp_url'));
+      }
+    });
+  }
+});
+
+//]]>
+</script>
+
+</div>
+</div>
+<!-- end .piece --></div>
+
+<div class="mainBanner">
+<ul class="item01">
+<li><a href="/about/introduction/"><img src="https://www.city.nago.okinawa.jp/_files/00001168/main_banner01.png" alt="名護市の紹介" /></a></li>
+<li><a href="/municipal/2018071300163/"><img src="https://www.city.nago.okinawa.jp/_files/00001175/main_banner02.png" alt="広報誌 市民のひろば" /></a></li>
+</ul>
+<ul class="item02">
+<li><a href="/mayor/"><img src="https://www.city.nago.okinawa.jp/_files/00001182/main_banner03.png" alt="市長の部屋" /></a></li>
+<li><a href="/category/municipal/"><img src="https://www.city.nago.okinawa.jp/_files/00001199/main_banner04.png" alt="市政情報" /></a></li>
+<li><a href="/category/machidukuri/furusatonouzei/"><img src="https://www.city.nago.okinawa.jp/_files/00001205/main_banner05.png" alt="ふるさと納税" /></a></li>
+</ul>
+</div>
+</div>
+
+<div id="searchNavi" class="piece">
+<div class="pieceContainer">
+<div class="pieceBody clearfix">
+<div class="search"><script>
+  (function() {
+    var cx = '003091369360866915031:j2wvco93woq';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:searchbox-only></gcse:searchbox-only></div>
+<ul class="clearfix">
+<li><a href="/category/guide/shisetsu/">各施設紹介</a></li>
+<li><a href="/soshiki/">組織一覧</a></li>
+<li><a href="/category/guide/todokede/sinseisho/">各種申請・証明</a></li>
+<li><a href="https://krq909.legal-square.com/HAS-Shohin/page/SJSrbLogin.jsf">名護市例規集</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+</div>
+<!-- end #pageNavContainer --></div>
+<!-- end #pageNav --></nav>
+
+<div id="main">
+<div id="mainContainer">
+
+<div id="wrapper">
+
+<div id="content">
+<div id="contentContainer">
+<div id="contentBody">
+
+<div id="attentionInformation" class="piece">
+<div class="pieceContainer">
+<div class="pieceHeader"><h2>注目情報</h2></div>
+<div class="pieceBody"><ul class="docs">
+  <li class="articles"><span class="publish_date">2025.07.01</span><span class="title_link"><a href="/articles/2025061800022/">夏休みプール一般開放のお知らせ</a></span> (<span class="group">文化スポーツ振興課（市民会館）</span>)</li>
+  <li class="articles"><span class="publish_date">2025.07.01</span><span class="title_link"><a href="/articles/2025061700025/">令和８年度名護市職員採用候補者試験の実施について</a></span> (<span class="group">人事行政課</span>)</li>
+  <li class="articles"><span class="publish_date">2025.06.27</span><span class="title_link"><a href="/articles/2025061200037/">【募集】令和7年度ぶりでぃ子ども博物館「昆虫標本づくり講座」</a></span> (<span class="group">博物館</span>)</li>
+  <li class="articles"><span class="publish_date">2025.06.27</span><span class="title_link"><a href="/articles/2025061800039/">少年少女水泳教室参加者募集のお知らせ</a></span> (<span class="group">文化スポーツ振興課（市民会館）</span>)</li>
+  <li class="articles"><span class="publish_date">2025.06.27</span><span class="title_link"><a href="/articles/2025062700031/">名護中心市街地整備事業調査業務委託（その４）に係る公募型プロポーザルの実施について</a></span> (<span class="group">まちなか再開発・公共交通課</span>)</li>
+</ul>
+<div class="more">
+  <a href="/news/newslist/attention/">一覧</a>
+</div>
+</div>
+</div>
+<!-- end .piece --></div>
+
+<div id="recentDocsTab" class="piece">
+<div class="pieceContainer">
+<div class="pieceHeader"><h2>お知らせ</h2></div>
+<div class="pieceBody"><script src="/_common/modules/gp_article/js/doc_tabs.js"></script><script>
+//<![CDATA[
+var docTabs123 = new ArticleDocTabs('recentDocsTab');
+
+//]]>
+</script>
+<nav class="tabs">
+  <ul>
+    <li class="news current"><a class="showDocTab123" href="#news">新着</a></li>
+    <li class="boshu"><a class="showDocTab123" href="#boshu">募集</a></li>
+  </ul>
+</nav>
+
+<div class="wrapper">
+  <div class="content">
+    <ul id="news" class="news">
+      <li><span class="publish_date">2025.07.01</span><span class="title_link"><a href="/articles/2025061800022/">夏休みプール一般開放のお知らせ</a></span> (<span class="group">文化スポーツ振興課（市民会館）</span>)</li>
+      <li><span class="publish_date">2025.07.01</span><span class="title_link"><a href="/articles/2025062700048/">「宝くじまちの音楽会」  岡村孝子with 三浦和人 ～プレミアムな瞬間を重ねて～ お知らせ</a></span> (<span class="group">文化スポーツ振興課（市民会館）</span>)</li>
+      <li><span class="publish_date">2025.07.01</span><span class="title_link"><a href="/articles/2025061700025/">令和８年度名護市職員採用候補者試験の実施について</a></span> (<span class="group">人事行政課</span>)</li>
+      <li><span class="publish_date">2025.07.01</span><span class="title_link"><a href="/articles/2025062500013/">令和７年度　市営住宅空家待ち入居候補者募集について</a></span> (<span class="group">建築住宅課</span>)</li>
+      <li><span class="publish_date">2025.07.01</span><span class="title_link"><a href="/articles/2023070400042/">庁舎内銀行窓口について（指定金融機関）</a></span> (<span class="group">会計課</span>)</li>
+    </ul>
+    <ul id="boshu" class="boshu" style="display: none;">
+      <li><span class="publish_date">2025.06.27</span><span class="title_link"><a href="/articles/2025061800039/">少年少女水泳教室参加者募集のお知らせ</a></span> (<span class="group">文化スポーツ振興課（市民会館）</span>)</li>
+      <li><span class="publish_date">2025.06.27</span><span class="title_link"><a href="/articles/2025062700031/">名護中心市街地整備事業調査業務委託（その４）に係る公募型プロポーザルの実施について</a></span> (<span class="group">まちなか再開発・公共交通課</span>)</li>
+      <li><span class="publish_date">2025.06.27</span><span class="title_link"><a target="_blank" href="https://www.city.nago.okinawa.jp/kurashi/2024050800050/">市民手話教室の開催案内（８月※親子教室開催の参加募集中）</a></span> (<span class="group">社会福祉課</span>)</li>
+      <li><span class="publish_date">2025.06.25</span><span class="title_link"><a href="/articles/2025061900029/">「出張労働相談会 in 名護市」</a></span> (<span class="group">商工・企業誘致課</span>)</li>
+      <li><span class="publish_date">2025.06.20</span><span class="title_link"><a href="/articles/2025060400063/">TSUNAGU CITY 2026 in NAGO 企画提案及び運営業務委託プロポーザルの実施について</a></span> (<span class="group">商工・企業誘致課</span>)</li>
+    </ul>
+  </div>
+
+  <div class="links">
+    <div class="news">
+      <ul class="feed">
+        <li><a title="RSSフィードを取得" class="feedRss" href="/articles/index.rss">RSS</a></li>
+        <li><a title="Atomフィードを取得" class="feedAtom" href="/articles/index.atom">Atom</a></li>
+      </ul>
+      <div class="more"><a href="/articles/">一覧</a></div>
+    </div>
+    <div class="boshu" style="display: none;">
+      <ul class="feed">
+        <li><a title="RSSフィードを取得" class="feedRss" href="/news/newslist/boshu/index.rss">RSS</a></li>
+        <li><a title="Atomフィードを取得" class="feedAtom" href="/news/newslist/boshu/index.atom">Atom</a></li>
+      </ul>
+      <div class="more"><a href="/news/newslist/boshu/">一覧</a></div>
+    </div>
+  </div>
+<!-- end .wrapper --></div>
+<script>
+//<![CDATA[
+$(".showDocTab123").on('click', function (event) {
+  event.preventDefault();
+  var tabId = $(this).attr("href").replace(/#/, "");
+  console.log(tabId);
+  docTabs123.show(tabId);
+});
+
+
+//]]>
+</script></div>
+</div>
+<!-- end .piece --></div>
+
+<div id="guide" class="piece">
+<div class="pieceContainer">
+<div class="pieceHeader"><h2>暮らしのガイド</h2></div>
+<div class="pieceBody"><ul>
+<li><a href="/category/guide/kosodate/"><span class="icon"><img src="/_files/00000789/ic_guide06.png" alt="" title="出産・子育て" /></span><span class="text">出産・子育て</span></a></li>
+<li><a href="/category/guide/kyoiku/"><span class="icon"><img src="/_files/00000802/ic_guide08.png" alt="" title="教育環境" /></span><span class="text">教育環境</span></a></li>
+<li><a href="/category/guide/kenkou/"><span class="icon"><img src="/_files/00000765/ic_guide04.png" alt="" title="健康・スポーツ" /></span><span class="text">健康・スポーツ</span></a></li>
+<li class="mr00"><a href="/category/guide/kourei/"><span class="icon"><img src="/_files/00000895/ic_guide07.png" alt="" title="高齢･介護･障がい者" /></span><span class="text">高齢･介護･障がい者</span></a></li>
+<li><a href="/category/guide/zeikin/"><span class="icon"><img src="/_files/00000888/ic_guide16.png" alt="" title="税金・保険" /></span><span class="text">税金・保険</span></a></li>
+<li><a href="/category/guide/gomi/"><span class="icon"><img src="/_files/00000741/ic_guide02.png" alt="" title="ごみ" /></span><span class="text">ごみ</span></a></li>
+<li><a href="/category/guide/sumai/"><span class="icon"><img src="/_files/00000864/ic_guide14.png" alt="" title="住まい・環境" /></span><span class="text">住まい・環境</span></a></li>
+<li class="mr00"><a href="/category/guide/sangyou/"><span class="icon"><img src="/_files/00000826/ic_guide10.png" alt="" title="産業・ビジネス" /></span><span class="text">産業・ビジネス</span></a></li>
+<li><a href="/category/guide/kankou/"><span class="icon"><img src="/_files/00000758/ic_guide03.png" alt="" title="観光・地域" /></span><span class="text">観光・地域</span></a></li>
+<li><a href="/category/guide/bousai/"><span class="icon"><img src="/_files/00000734/ic_guide01.png" alt="" title="救急・消防・防災" /></span><span class="text">救急・消防・防災</span></a></li>
+<li><a href="/category/guide/shisetsu/"><span class="icon"><img src="/_files/00000840/ic_guide12.png" alt="" title="各施設紹介" /></span><span class="text">各施設紹介</span></a></li>
+<li class="mr00"><a href="/category/guide/todokede/"><span class="icon"><img src="/_files/00000871/ic_guide15.png" alt="" title="各種届出" /></span><span class="text">各種届出</span></a></li>
+<li><a href="/category/guide/sodan/"><span class="icon"><img src="/_files/00000857/ic_guide13.png" alt="" title="相談窓口" /></span><span class="text">相談窓口</span></a></li>
+<li><a href="/category/guide/senkyo/"><span class="icon"><img src="/_files/00000833/ic_guide11.png" alt="" title="選挙" /></span><span class="text">選挙</span></a></li>
+<li><a href="/category/guide/nyusatu/"><span class="icon"><img src="/_files/00000819/ic_guide09.png" alt="" title="入札関連" /></span><span class="text">入札関連</span></a></li>
+<li class="mr00"><a href="/category/guide/kichi/"><span class="icon"><img src="/_files/00000772/ic_guide05.png" alt="" title="基地関連" /></span><span class="text">基地関連</span></a></li>
+</ul>
+</div>
+</div>
+<!-- end .piece --></div>
+
+<div id="sns">
+<ul class="snsTab">
+<!--<li class="twitterTab select">名護市公式Twitter</li>-->
+<li class="facebookTab select">名護市公式Facebook</li>
+</ul>
+<div class="snsCont">
+<!--<div class="twitterCont">
+<br>
+<br>
+<br>
+</div>-->
+<div class="facebookCont">
+<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fokinawa.nago.official&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+</div>
+</div></div>
+
+</div>
+<!-- end #contentContainer --></div>
+<!-- end #content --></div>
+
+<div id="menu">
+<div id="menuContainer">
+<div id="menuBody">
+
+<div id="kinkyuList" class="piece">
+<div class="pieceContainer">
+<div class="pieceHeader"><h2>いざという時は</h2></div>
+<div class="pieceBody">
+<ul>
+<li><a href="/kurashi/2018071900677/">避難場所</a></li>
+<li><a href="/category/guide/bousai/bousaikokuminhogo/">防災・国民保護</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="population" class="piece">
+<div class="pieceContainer">
+<div class="pieceHeader"><h2>名護市の人口</h2></div>
+<div class="pieceBody">
+
+<p class="populationTitle">(令和7年6月30日現在)</p>
+<table>
+<tbody>
+<tr>
+<th>人口</th>
+<td>65,038</td>
+</tr>
+<tr>
+<th>男</th>
+<td>32,318</td>
+</tr>
+<tr>
+<th>女</th>
+<td>32,720</td>
+</tr>
+<tr>
+<th>世帯</th>
+<td>33,324</td>
+</tr>
+</tbody>
+</table>
+<p class="more"><a href="/about/population/">人口統計</a></p>
+
+</div>
+</div>
+</div>
+<div id="qr" class="piece">
+<div class="pieceContainer">
+<div class="pieceHeader"><h2>モバイルサイト</h2></div>
+<div class="pieceBody">
+
+<div class="qr-code">
+<p class="text">
+<span class="midashi">以下QRコードを読み取り<br />ご利用ください。</p>
+<p class="img"><img src="/_files/00000901/qr.png" alt="QRコード" title="QRコード" /></p>
+</div>
+
+</div>
+</div>
+</div>
+<p class="contactBtn"><a href="/contact.html">ご意見・ご感想</a></p>
+
+</div>
+<!-- end #menuContainer --></div>
+<!-- end #menu --></div>
+
+<!-- end #wrapper --></div>
+
+<div id="links">
+<div id="linksContainer">
+<div id="linksBody">
+
+
+<ul class="sideLink">
+<li class="item01"><a href="/library/"><span class="icon"><img src="/_files/00000499/ic_link01.png" alt="アイコン" title="アイコン" /></span><span class="text">名護市立<br />中央図書館</span></a></li>
+<li class="item02"><a href="museum"><span class="icon"><img src="/_files/00000505/ic_link02.png" alt="アイコン" title="アイコン" /></span><span class="text">名護博物館</span></a></li>
+<li class="item03"><a href="hall"><span class="icon"><img src="/_files/00000512/ic_link03.png" alt="アイコン" title="アイコン" /></span><span class="text">名護市民会館</span></a></li>
+<li class="item04"><a href="/soshiki/gikai/"><span class="icon"><img src="/_files/00000529/ic_link04.png" alt="アイコン" title="アイコン" /></span><span class="text">名護市議会</span></a></li>
+</ul>
+
+</div>
+<!-- end #linksContainer --></div>
+<!-- end #links --></div>
+
+<!-- end #mainContainer --></div>
+<!-- end #main --></div>
+
+<footer id="pageFooter">
+<div id="pageFooterContainer">
+<div id="pageFooterBody">
+
+<div id="bnAdvertisement" class="piece">
+<div class="pieceContainer">
+<div class="pieceBody">  
+<ul class="bannerImages">
+  <li class="banner">
+    <a target="_self" data-token="jZLu45k4yo5cPzvSLTWX" data-sp-url="https://www.car489.info/" href="https://www.car489.info/">
+        <img alt="レンタカーならたびんふぉ" title="レンタカーならたびんふぉ" src="/banner/tabiinfo-.gif" />
+</a>  </li>
+  <li class="banner">
+    <a target="_blank" data-token="FFMyPC8t1pdifSTsDZ7C" data-sp-url="" href="https://xn--mnq342enlaxgq03fk9n.com">
+        <img alt="おそうじぽん" title="おそうじぽん" src="/banner/osojipon_nago_25977_marked.gif" />
+</a>  </li>
+  <li class="banner">
+    <a target="_self" data-token="hA5zaajHyupLDWGgHSkP" data-sp-url="" href="http://www.scinex.co.jp/wagamachi/loco/47209/dl_pc.html">
+        <img alt="" title="名護市SGバナー案1" src="/banner/SG1.jpg" />
+</a>  </li>
+</ul>
+
+
+<script>
+//<![CDATA[
+$(function() {
+  $('#bnAdvertisement li.banner a').on('click', function() {
+    $.get('/_api/ad_banner/piece_clicks', { piece_id: 94, token: $(this).data('token') });
+  });
+});
+
+//]]>
+</script>
+<script>
+//<![CDATA[
+$(function() {
+  if (bowser && bowser.mobile) {
+    $('#bnAdvertisement li.banner a').each(function() {
+      var a = $(this);
+      if (a.data('sp_url')) {
+        a.attr('href', a.data('sp_url'));
+      }
+    });
+  }
+});
+
+//]]>
+</script>
+
+</div>
+</div>
+<!-- end .piece --></div>
+
+<div id="commonFooter" class="piece">
+<div class="pieceContainer">
+<div class="pieceBody clearfix">
+
+<div class="footerLeft">
+<div class="footerSiteTitle">
+<span class="logo"><img src="/_themes/base/images/logo.png" alt=""></span><a href="/">名護市役所<span class="subtitle">NAGO CITY OFFICIAL WEB SITE</span></a>
+</div>
+<address class="address">
+〒905-8540　沖縄県名護市港一丁目1番1号<br />
+TEL：0980-53-1212（代表）　FAX：0980-53-6210
+</address>
+<p class="information">【開庁時間】<br />
+月曜日～金曜日　（ただし祝・休日、6/23・12/29～1/3を除く）<br />
+午前8時30分 ～ 午後5時15分<br /></p>
+</div>
+<!--/footerLeft-->
+
+<div class="footerRight">
+<div class="oyakata">
+<img src="/_themes/base/images/oyakata.png" alt="名護市公認キャラクター 名護親方（なぐうぇーかた）" />
+<p class="oyakataMore"><a href="/kurashi/2018072001007/"><img src="/_themes/base/images/bt-more.png" alt="詳しくはこちら" /></a></p>
+</div>
+</div>
+<!--/footerRight-->
+
+</div>
+</div>
+</div>
+<div id="footerNavi" class="piece">
+<div class="pieceContainer">
+<div class="pieceBody">
+<ul>
+<li><a href="/riyo.html">ホームページ利用について</a></li>
+<li><a href="/copyright.html">リンク・著作権・免責事項</a></li>
+<li><a href="/privacy.html">個人情報の取り扱い</a></li>
+<li><a href="/sitemap.html">サイトマップ</a></li>
+<li><a href="/link.html">リンク集</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="copyright" class="piece clearfix">
+<div class="pieceContainer">
+<div class="pieceBody clearfix">
+
+<p><small>Copyright(C) 2018   nago city public office. All rights reserved</small></p>
+
+</div>
+</div>
+</div>
+
+</div>
+<!-- end #pageFooterContainer --></div>
+<!-- end #pageFooter --></footer>
+
+</div>
+</body>
+</html>
